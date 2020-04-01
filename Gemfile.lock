@@ -56,21 +56,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
-    binding_of_caller (0.8.0)
-      debug_inspector (>= 0.0.1)
+    bindex (0.8.1)
     builder (3.2.4)
     byebug (11.1.1)
     coderay (1.1.2)
-    coffee-rails (5.0.0)
-      coffee-script (>= 2.2.0)
-      railties (>= 5.2.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
-    debug_inspector (0.0.3)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -104,10 +95,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
-    jquery-rails (4.3.5)
-      rails-dom-testing (>= 1, < 3)
-      railties (>= 4.2.0)
-      thor (>= 0.14, < 2.0)
     json (1.8.6)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -209,11 +196,11 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-    web-console (2.3.0)
-      activemodel (>= 4.0)
-      binding_of_caller (>= 0.7.2)
-      railties (>= 4.0)
-      sprockets-rails (>= 2.0, < 4.0)
+    web-console (4.0.1)
+      actionview (>= 6.0.0)
+      activemodel (>= 6.0.0)
+      bindex (>= 0.4.0)
+      railties (>= 6.0.0)
     webpacker (5.0.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
@@ -229,12 +216,10 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  coffee-rails (~> 5.0.0)
   guard (>= 2.2.2)
   guard-livereload
   guard-rails
   jbuilder (~> 2.0)
-  jquery-rails
   rack-livereload
   rails (~> 6.0.2)
   rb-fsevent
@@ -244,7 +229,7 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)
-  web-console (~> 2.0)
+  web-console (~> 4.0)
   webpacker
 
 BUNDLED WITH
